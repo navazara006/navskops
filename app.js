@@ -205,17 +205,28 @@ console.log("Tier:", tierC);
 // TODO 6A:
 // Buat variabel Array bernama "menuRekomendasi" yang berisi minimal 5 nama menu kopi/makanan.
 
-
+let menuRekomendasi = [
+    "Kopi Susu Gula Aren",
+    "Americano matcha",
+    "Cappuccino squish",
+    "Hotdog",
+    "BurgerQueen"
+];
 
 
 // TODO 6B:
 // Gunakan perulangan "for loop" untuk mencetak setiap menu ke Console dengan format:
 // "1. Nama Menu", "2. Nama Menu", dst. Gunakan (i + 1) untuk nomor urutnya.
 
-
+for (let i = 0; i < menuRekomendasi.length; i++) {
+    console.log((i + 1) + ". " + menuRekomendasi[i]);
+}
 
 
 // TODO 6C:
 // Cetak jumlah total menu di akhir daftar menggunakan properti ".length".
 // Akhiri program dengan: console.log("=== TUGAS MANDIRI SELESAI DENGAN SUKSES! ===");
 
+console.log("Total menu: " + menuRekomendasi.length);
+
+console.log("=== TUGAS MANDIRI SELESAI DENGAN SUKSES! ===");
