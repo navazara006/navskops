@@ -27,7 +27,7 @@ console.log("=== SISTEM POIN MEMBER KEDAI KOPI ===");
 // TODO 1: Tulis satu baris console.log() untuk memastikan file app.js sudah terhubung!
 // Contoh output: "Skrip app.js berhasil terhubung!"
 
-
+console.log("Skrip app.js berhasil terhubung!");
 
 
 // ============================================================
@@ -40,7 +40,13 @@ console.log("=== SISTEM POIN MEMBER KEDAI KOPI ===");
 // 2. Buat variabel "namaKasir" (misal: "Kak Eko") dan "shiftKerja" menggunakan "let".
 // 3. Cetak nilai NAMA_KEDAI, namaKasir, dan shiftKerja ke Console menggunakan console.log().
 
+const NAMA_KEDAI = "Kopi PSTI Kampus";
+let namaKasir = "Kak Arsyad";
+let shiftKerja = "Malam";
 
+console.log(NAMA_KEDAI);
+console.log(namaKasir);
+console.log(shiftKerja);
 
 
 // ---- DEMO PERBEDAAN LET vs CONST ----
@@ -48,7 +54,9 @@ console.log("=== SISTEM POIN MEMBER KEDAI KOPI ===");
 // Ubah (re-assign) nilai variabel "namaKasir" dengan nama kasir lain,
 // lalu cetak ke Console untuk membuktikan bahwa variabel "let" nilainya dapat diubah.
 
+namaKasir = "Kak Zara";
 
+console.log(namaKasir);
 
 
 // ---- BAGIAN 2B: INPUT INTERAKTIF & PENGANDAIAN DASAR ----
@@ -59,7 +67,17 @@ console.log("=== SISTEM POIN MEMBER KEDAI KOPI ===");
 //    - JIKA namaPelanggan ada isinya: tampilkan alert sapaan dan log ke console.
 //    - JIKA namaPelanggan kosong / klik Cancel: beri nilai default "Pelanggan Setia" dan tampilkan alert pemberitahuan.
 
+alert("Selamat datang di navskops");
 
+let namaPelanggan = prompt("Silakan masukkan nama Anda:");
+
+if (namaPelanggan) {
+    alert("Halo, " + namaPelanggan + "! Selamat datang.");
+    console.log("Nama pelanggan: " + namaPelanggan);
+} else {
+    namaPelanggan = "Pelanggan Setia";
+    alert("Selamat datang, " + namaPelanggan + "!");
+}
 
 
 // ============================================================
@@ -73,7 +91,16 @@ console.log("=== SISTEM POIN MEMBER KEDAI KOPI ===");
 // 2. Buat variabel "totalPoin" yang menjumlahkan ketiga variabel poin di atas.
 // 3. Cetak rincian perolehan poin dan totalPoin ke Console menggunakan console.log().
 
+let poinKopi = 45;
+let poinMakanan = 35;
+let poinMerchandise = 20;
 
+let totalPoin = poinKopi + poinMakanan + poinMerchandise;
+
+console.log("Poin Kopi:", poinKopi);
+console.log("Poin Makanan:", poinMakanan);
+console.log("Poin Merchandise:", poinMerchandise);
+console.log("Total Poin:", totalPoin);
 
 
 // ============================================================
